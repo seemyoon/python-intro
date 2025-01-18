@@ -59,3 +59,18 @@ userInput = input("pls enter your name")
 
 
 print(userInput)
+
+# statement
+exampleOfNumber = 2
+
+exampleOfLetter = "f"
+
+if exampleOfNumber > 1:
+    print("your value more than 1")
+
+# expression
+operation = 4 - 2
+
+wordOperation = "Hello " + "world"
+
+print(wordOperation)
