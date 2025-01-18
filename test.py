@@ -74,3 +74,18 @@ operation = 4 - 2
 wordOperation = "Hello " + "world"
 
 print(wordOperation)
+
+# variables
+your_number = 3
+
+# constant variables
+MY_PASSWORD = "qweqwe"
+
+# reassign variables
+your_value = "asd"
+print(your_value)
+your_value = 2
+print(your_value)
+
+# id of value in the memory
+print(id(your_value))
