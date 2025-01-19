@@ -55,10 +55,10 @@ print(sum(listOfNumbers))
 
 print(dir())
 
-userInput = input("pls enter your name")
+# userInput = input("pls enter your name")
 
 
-print(userInput)
+# print(userInput)
 
 # statement
 exampleOfNumber = 2
@@ -89,3 +89,21 @@ print(your_value)
 
 # id of value in the memory
 print(id(your_value))
+
+findId = 123
+findId2 = 123
+
+print(id(findId))
+
+print(id(findId) == id(findId2))
+
+variableString = "jkhdfs"
+print(type(variableString))
+
+print(type(object))
+
+inst = isinstance(234, int)
+inst2 = isinstance("sasha", int)
+
+print(inst)
+print(inst2)
