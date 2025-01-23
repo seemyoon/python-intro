@@ -191,3 +191,15 @@ print(exStringConcat3)
 # s%
 exStringConcat4 = "hello, i'm %s and i from %s" % (name, town)
 print(exStringConcat4)
+
+
+listInstance = [132, 789.5, "asd", True, False]
+tupleInstance = (132, 789.5, "asd")
+
+example = tupleInstance[0:1]
+
+print(type(tupleInstance))
+print(type(example))
+
+s = {1, 2, 3}
+listS = list(s)
