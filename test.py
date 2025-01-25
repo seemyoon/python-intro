@@ -203,3 +203,16 @@ print(type(example))
 
 s = {1, 2, 3}
 listS = list(s)
+
+
+# function
+def fruits_func(my_name, fruits):
+    print(id(fruits))
+    # for fruit in fruits:
+    #     print("{} likes {}".format(my_name, fruit))
+
+
+fruits_collection = ["banana", "cherry", "ananas"]
+name = "Oleksandr"
+
+fruits_func(name, fruits_collection)
