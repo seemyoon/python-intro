@@ -219,4 +219,17 @@
 #
 # enumerate()
 # main_list = ["sub_first_key", "sub_second_key", "sub_third_key", "sub_fourth_key"]
-test_list = [54, "asd", None, {"sub_first_key": 78, "sub_second_key": "asd"}]
+# test_list = [54, "asd", None, {"sub_first_key": 78, "sub_second_key": "asd"}]
+counter = 0
+
+
+def inc_counter(counter):
+    counter += 1
+
+
+def dec_counter(counter):
+    counter -= 1
+
+
+inc_counter(counter)
+print(counter)
