@@ -24,3 +24,20 @@ try:
     print(res)
 except TypeError as e:
     print(e)
+
+# or short variant:
+def image_info2(some_dict: dict):
+    if "image_id" not in some_dict or "image_title" not in some_dict:
+        raise TypeError("Both 'image_id' and 'image_title' must be in the dictionary")
+
+    return "Image '%s' has id %s" % (
+        some_dict["image_title"],
+        some_dict["image_id"],
+    )
+
+
+try:
+    res2 = image_info({"image_id": 456, "image_title": "Sasha's photo"})
+    print(res2)
+except TypeError as e:
+    print(e)
