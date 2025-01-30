@@ -252,3 +252,18 @@ print(users)
 
 even_age = filter(lambda user: user["age"] % 2 == 0, users)  # using lamda
 print(list(even_age))
+
+listInstance2 = (132, 789.5, "asd", True, False)
+(elem1, elem2, *rest_of_elems) = listInstance2
+print(rest_of_elems)
+
+students = [
+    {"name": "Peter", "age": 22},
+    {"name": "Joe", "age": 19},
+    {"name": "Alice", "age": 25},
+]
+
+# new_lists_of_students = map(lambda student: student["age"] * 2, students)
+students.sort(key=lambda student: student["age"], reverse=True)
+# print(list(new_lists_of_students))
+print(students)
