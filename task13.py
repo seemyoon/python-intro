@@ -6,19 +6,25 @@
 
 while True:
     try:
-        user_first_number = int(input("Please enter first desired number: "))
-        user_second_number = int(input("Please enter second desired number: "))
-        print(f"Your numbers: {user_first_number} and {user_second_number}")
+        user_first_number = int(input("enter the number to be divided: "))
+        user_second_number = int(input("enter the divisor: "))
+
+        if user_second_number == 0:
+            print("division by zero is not allowed!")
+            continue
+
+        result = user_first_number / user_second_number
+        print(f"result of division: {result}")
 
         while True:
-            user_answer_input = str(input("Do you want to continue? ")).strip().lower()
+            user_answer_input = input("do you want to continue? ").strip().lower()
             if user_answer_input == "yes":
                 break
             elif user_answer_input == "no":
                 exit()
             else:
-                print("You need set 'yes' or 'no'")
+                print("you need set 'yes' or 'no'")
 
     except ValueError as e:
         print(e)
-        print("You entered wrong type of value")
+        print("you entered wrong type of value")
