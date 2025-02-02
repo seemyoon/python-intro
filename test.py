@@ -267,3 +267,13 @@ students = [
 students.sort(key=lambda student: student["age"], reverse=True)
 # print(list(new_lists_of_students))
 print(students)
+
+my_scores = {
+    "first_score": 45,
+    "second_score": 57,
+    "third_score": 89,
+}
+
+scores = {score: my_scores[score] * 2 for score in my_scores}
+print(my_scores)
+print(scores)
