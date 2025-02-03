@@ -1,4 +1,5 @@
 # print
+
 print("wow")
 
 # main types
@@ -277,3 +278,17 @@ my_scores = {
 scores = {score: my_scores[score] * 2 for score in my_scores}
 print(my_scores)
 print(scores)
+
+new_list3 = [
+    "Machine learning",
+    "Data science",
+    "Wev development",
+    "Backend development",
+    "Frontend development",
+    "DevOps",
+]
+
+new_list4 = ("my speciality is " + speciality for speciality in new_list3)
+print(new_list4)
+for item in new_list4:
+    print(item)
