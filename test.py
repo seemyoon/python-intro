@@ -292,3 +292,20 @@ new_list4 = ("my speciality is " + speciality for speciality in new_list3)
 print(new_list4)
 for item in new_list4:
     print(item)
+
+print("----new task----")
+
+
+class Car:
+    def move(self):
+        print("car is moving")
+
+    def stop(self):
+        print("car stopped")
+
+
+my_car = Car()
+my_car.color = "red"
+print(my_car.__dict__)
+my_car.move()
+my_car.stop()
